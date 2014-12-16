@@ -42,7 +42,7 @@ Desktop.ini
 
 #IntelliJ stuff
 /.idea/
-Nexia.iml
+*.iml
 id_file
 
 *.log.*
