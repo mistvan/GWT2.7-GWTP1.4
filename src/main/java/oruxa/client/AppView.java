@@ -1,4 +1,4 @@
-package oruxa.client.homepage;
+package oruxa.client;
 
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTMLPanel;
@@ -8,20 +8,18 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-/**
- * Created by navid on 12/12/14.
- */
-public class HomepageView extends ViewImpl implements HomepagePresenter.Display, View {
+
+public class AppView extends ViewImpl implements AppPresenter.Display, View {
 
     HTMLPanel widget;
-    public HomepageView() {
-        widget = new HTMLPanel("Salam");
+    public AppView() {
+        widget=new HTMLPanel("");
 
     }
 
     @Override
     public void addToSlot(Object slot, IsWidget content) {
-        Window.alert("add");
+
     }
 
     @Override
@@ -31,7 +29,8 @@ public class HomepageView extends ViewImpl implements HomepagePresenter.Display,
 
     @Override
     public void setInSlot(Object slot, IsWidget content) {
-
+        widget.clear();
+        widget.add(content);
     }
 
     @Override

@@ -23,7 +23,7 @@
   <!--<entry-point class='oruxa.client.moduleA.moduleA' />-->
 
   <set-configuration-property name="gin.ginjector.modules"
-                              value="oruxa.client.GinClientModule"/>
+                              value="oruxa.client.gin.GinClientModule"/>
 
 
   <!-- Specify the paths for translatable code                    -->

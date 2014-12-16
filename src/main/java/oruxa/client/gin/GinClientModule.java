@@ -1,4 +1,4 @@
-package oruxa.client;
+package oruxa.client.gin;
 
 import com.gwtplatform.common.client.CommonGinModule;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
@@ -14,9 +14,9 @@ public class GinClientModule extends AbstractPresenterModule {
         install(new DefaultModule());
 
 
-        bindConstant().annotatedWith(DefaultPlace.class).to("home");
-        bindConstant().annotatedWith(ErrorPlace.class).to("error");
-        bindConstant().annotatedWith(UnauthorizedPlace.class).to("error");
+        bindConstant().annotatedWith(DefaultPlace.class).to("!home");
+        bindConstant().annotatedWith(ErrorPlace.class).to("!error");
+        bindConstant().annotatedWith(UnauthorizedPlace.class).to("!error");
 
         install(new GinApplicationModule());
     }

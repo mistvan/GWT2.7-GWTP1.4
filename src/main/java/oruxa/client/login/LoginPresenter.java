@@ -1,4 +1,4 @@
-package oruxa.client.homepage;
+package oruxa.client.login;
 
 
 import com.google.inject.Inject;
@@ -11,7 +11,7 @@ import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 import oruxa.client.AppPresenter;
 
-public class HomepagePresenter extends Presenter<HomepagePresenter.Display,HomepagePresenter.Proxy> {
+public class LoginPresenter extends Presenter<LoginPresenter.Display,LoginPresenter.Proxy> {
 
 
     public interface Display extends View {
@@ -20,12 +20,12 @@ public class HomepagePresenter extends Presenter<HomepagePresenter.Display,Homep
 
 
     @ProxyStandard
-    @NameToken("!home")
-    public interface Proxy extends ProxyPlace<HomepagePresenter> { }
+    @NameToken("!login")
+    public interface Proxy extends ProxyPlace<LoginPresenter> { }
 
 
     @Inject
-    public HomepagePresenter(EventBus eventBus, Display view, Proxy proxy){
+    public LoginPresenter(EventBus eventBus, Display view, Proxy proxy){
         super(eventBus,view,proxy);
     }
 
