@@ -7,7 +7,7 @@ import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
 
-public class GinClientModule extends AbstractPresenterModule {
+public class ClientModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         install(new CommonGinModule());

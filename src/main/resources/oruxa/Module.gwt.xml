@@ -22,8 +22,13 @@
   <!-- Specify the app entry point class.                         -->
   <!--<entry-point class='oruxa.client.moduleA.moduleA' />-->
 
+  <set-configuration-property name="gin.ginjector.extensions"
+                              value="oruxa.client.gin.MyClientGinjector"/>
+
   <set-configuration-property name="gin.ginjector.modules"
-                              value="oruxa.client.gin.GinClientModule"/>
+                              value="oruxa.client.gin.ClientModule"/>
+
+
 
 
   <!-- Specify the paths for translatable code                    -->

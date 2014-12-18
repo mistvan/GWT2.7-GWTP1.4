@@ -18,7 +18,6 @@ public class GinApplicationModule extends AbstractPresenterModule {
         bindPresenter(AppPresenter.class, AppPresenter.Display.class, AppView.class,
                 AppPresenter.MyProxy.class);
 
-
         bindPresenter(LoginPresenter.class, LoginPresenter.Display.class, LoginView.class,
                 LoginPresenter.Proxy.class);
 
