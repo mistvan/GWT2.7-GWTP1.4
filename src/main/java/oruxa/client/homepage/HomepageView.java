@@ -15,7 +15,7 @@ public class HomepageView extends ViewImpl implements HomepagePresenter.Display,
 
     HTMLPanel widget;
     public HomepageView() {
-        widget = new HTMLPanel("Salam");
+        widget = new HTMLPanel("GWT Test 2");
 
     }
 

@@ -14,7 +14,7 @@
   <properties>
 
     <gwtVersion>2.7.0</gwtVersion>
-    <gwt.platform>1.4-SNAPSHOT</gwt.platform>
+    <gwt.platform>1.4</gwt.platform>
     <gwt.dispatcher>1.0.3</gwt.dispatcher>
     <gin.version>2.1.2</gin.version>
     <guice.version>3.0</guice.version>
@@ -65,14 +65,11 @@
       <scope>test</scope>
     </dependency>
 
-
-
-
     <!-- GWTP -->
     <dependency>
       <groupId>com.gwtplatform</groupId>
       <artifactId>gwtp-mvp-client</artifactId>
-      <version>${gwt.platform}</version>
+      <version>1.4</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
